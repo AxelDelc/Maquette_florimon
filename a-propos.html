@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florimon &mdash; &Agrave; propos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="a-propos.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="navbar-top">
+            <a href="boutique.html" class="nav-logo">
+                <img src="logo florimon.png" alt="Florimon" class="nav-logo-img">
+            </a>
+            <form class="nav-search" onsubmit="return false;">
+                <input type="search" class="nav-search-input" placeholder="Rechercher une plante, un produit...">
+                <button type="submit" class="nav-search-btn">&#128269;</button>
+            </form>
+            <div class="nav-actions">
+                <button class="nav-icon" title="Mon compte">&#128100;</button>
+                <button class="nav-icon nav-cart" title="Panier">
+                    &#128722;
+                    <span class="cart-badge">2</span>
+                </button>
+            </div>
+            <button class="nav-mobile-toggle" aria-label="Menu">&#9776;</button>
+        </div>
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-trigger">Plantes <span class="nav-chevron">&#9662;</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-col">
+                                <a href="listing.html?cat=arbustes" class="mega-link">Arbustes</a>
+                                <a href="listing.html?cat=vivaces" class="mega-link">Plantes vivaces</a>
+                                <a href="listing.html?cat=annuelles" class="mega-link">Plantes annuelles</a>
+                                <a href="listing.html?cat=fruitiers" class="mega-link">Fruitiers Arbres et arbustes</a>
+                                <a href="listing.html?cat=rosiers" class="mega-link">Rosiers</a>
+                                <a href="listing.html?cat=bulbes" class="mega-link">Bulbes &agrave; fleurs</a>
+                            </div>
+                            <div class="mega-col">
+                                <a href="listing.html?cat=grimpantes" class="mega-link">Plantes grimpantes</a>
+                                <a href="listing.html?cat=arbres" class="mega-link">Arbres</a>
+                                <a href="listing.html?cat=aquatiques" class="mega-link">Plantes aquatiques</a>
+                                <a href="listing.html?cat=interieur" class="mega-link">Plantes d'int&eacute;rieur</a>
+                                <a href="listing.html?cat=equipement" class="mega-link">&Eacute;quipement</a>
+                                <a href="listing.html?cat=nouveautes" class="mega-link mega-link-new">Nouveaut&eacute;s</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-trigger">Potager <span class="nav-chevron">&#9662;</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-col">
+                                <a href="listing.html?cat=graines-legumes" class="mega-link">Graines de fruits et l&eacute;gumes</a>
+                                <a href="listing.html?cat=pommes-de-terre" class="mega-link">Plants de Pommes de Terre</a>
+                                <a href="listing.html?cat=ail-oignons" class="mega-link">Ail, Oignons et &Eacute;chalotes</a>
+                                <a href="listing.html?cat=graines-fleurs" class="mega-link">Graines de fleurs</a>
+                                <a href="listing.html?cat=aromatiques" class="mega-link">Plants d'aromatiques</a>
+                                <a href="listing.html?cat=plants-potagers" class="mega-link">Plants potagers</a>
+                            </div>
+                            <div class="mega-col">
+                                <a href="listing.html?cat=graines-bio" class="mega-link">Graines de fruits et l&eacute;gumes Bio</a>
+                                <a href="listing.html?cat=gazon" class="mega-link">Graines de gazon</a>
+                                <a href="listing.html?cat=kit-graines" class="mega-link">Kit de graines</a>
+                                <a href="listing.html?cat=champignons" class="mega-link">Kits champignons</a>
+                                <a href="listing.html?cat=nouveautes-potager" class="mega-link mega-link-new">Nouveaut&eacute;s du potager</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="a-propos.html" class="active">&Agrave; propos</a></li>
+                <li><a href="index.html#temoignages">T&eacute;moignages</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO A PROPOS ========== -->
+    <section class="about-hero">
+        <div class="container">
+            <span class="about-tag">&Agrave; propos</span>
+            <h1 class="about-hero-title">Depuis 1968, la passion<br>du <em>jardin accessible</em></h1>
+            <p class="about-hero-subtitle">
+                Un beau jardin, fleuri, color&eacute; et facile &agrave; vivre, avec un budget limit&eacute; &mdash; c'est l'&acirc;me de Florimon.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== HISTOIRE ========== -->
+    <section class="about-section" id="histoire">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="about-section-tag">Notre histoire</span>
+                    <h2>Une entreprise familiale depuis plus de 50 ans</h2>
+                    <p>
+                        Cr&eacute;&eacute;e en <strong>1968</strong>, Florimon est une entreprise familiale
+                        sp&eacute;cialis&eacute;e dans la vente par correspondance de produits horticoles.
+                        Au fil des ann&eacute;es, nous avons b&acirc;ti une expertise reconnue pour offrir &agrave; nos
+                        clients le meilleur du v&eacute;g&eacute;tal, &agrave; un prix juste.
+                    </p>
+                    <p>
+                        Aujourd'hui, nous proposons un catalogue de pr&egrave;s de <strong>300 plantes de qualit&eacute;</strong> :
+                        bulbes, semences, rosiers, arbres, arbustes, plantes vivaces et bien plus encore. Chaque
+                        r&eacute;f&eacute;rence est soigneusement s&eacute;lectionn&eacute;e pour sa robustesse et sa facilit&eacute; de culture.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card-highlight">
+                        <span class="about-card-number">1968</span>
+                        <span class="about-card-label">Ann&eacute;e de cr&eacute;ation</span>
+                    </div>
+                    <div class="about-card-highlight">
+                        <span class="about-card-number">300+</span>
+                        <span class="about-card-label">Plantes de qualit&eacute;</span>
+                    </div>
+                    <div class="about-card-highlight">
+                        <span class="about-card-number">5</span>
+                        <span class="about-card-label">Pays livr&eacute;s</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENGAGEMENTS ========== -->
+    <section class="about-section about-section-alt" id="engagements">
+        <div class="container">
+            <div class="about-section-header">
+                <span class="about-section-tag">Nos engagements</span>
+                <h2>Qualit&eacute;, simplicit&eacute;, prix juste</h2>
+            </div>
+            <div class="engagements-grid">
+                <div class="engagement-card">
+                    <span class="engagement-icon">&#127793;</span>
+                    <h3>Qualit&eacute; & prix</h3>
+                    <p>
+                        Nous nouons des partenariats privil&eacute;gi&eacute;s avec nos fournisseurs pour vous offrir
+                        des plantes de qualit&eacute; au meilleur rapport qualit&eacute;/prix. Notre credo : un beau
+                        jardin ne devrait pas co&ucirc;ter une fortune.
+                    </p>
+                </div>
+                <div class="engagement-card">
+                    <span class="engagement-icon">&#127807;</span>
+                    <h3>Facilit&eacute; de culture</h3>
+                    <p>
+                        Nos plantes sont s&eacute;lectionn&eacute;es pour leur facilit&eacute; de culture. Que vous soyez
+                        jardinier d&eacute;butant ou confirm&eacute;, vous trouverez chez Florimon des v&eacute;g&eacute;taux
+                        qui s'adaptent &agrave; vos envies et votre niveau.
+                    </p>
+                </div>
+                <div class="engagement-card">
+                    <span class="engagement-icon">&#128230;</span>
+                    <h3>Livraison soign&eacute;e</h3>
+                    <p>
+                        Chaque commande est pr&eacute;par&eacute;e avec soin dans notre entrep&ocirc;t fran&ccedil;ais.
+                        Emballage protecteur, exp&eacute;dition rapide : vos plantes arrivent chez vous en
+                        <strong>48 &agrave; 72 heures</strong>, en parfait &eacute;tat.
+                    </p>
+                </div>
+                <div class="engagement-card">
+                    <span class="engagement-icon">&#127758;</span>
+                    <h3>Livraison internationale</h3>
+                    <p>
+                        Nous livrons dans <strong>5 pays europ&eacute;ens</strong> : France, Belgique, Allemagne,
+                        Pays-Bas et Angleterre. O&ugrave; que vous soyez, votre jardin de r&ecirc;ve est &agrave; port&eacute;e de clic.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT & ADRESSE ========== -->
+    <section class="about-section" id="contact">
+        <div class="container">
+            <div class="about-grid about-grid-reverse">
+                <div class="about-content">
+                    <span class="about-section-tag">Nous contacter</span>
+                    <h2>Une question ? Nous sommes l&agrave;</h2>
+                    <p>
+                        Notre &eacute;quipe est &agrave; votre &eacute;coute pour r&eacute;pondre &agrave; toutes vos questions
+                        sur nos plantes, votre commande ou vos projets de jardin.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">&#128205;</span>
+                            <div>
+                                <strong>Adresse</strong>
+                                <span>6, rue des Forts<br>59960 Neuville-en-Ferrain</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">&#128222;</span>
+                            <div>
+                                <strong>T&eacute;l&eacute;phone</strong>
+                                <span><a href="tel:0320257936">03 20 25 79 36</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">&#9993;</span>
+                            <div>
+                                <strong>Email</strong>
+                                <span><a href="mailto:support@florimon.com">support@florimon.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual about-visual-map">
+                    <div class="map-placeholder">
+                        <span class="map-pin">&#128205;</span>
+                        <span class="map-label">Neuville-en-Ferrain (59)</span>
+                        <span class="map-sublabel">Pr&egrave;s de Tourcoing, Nord</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== L'AME DE FLORIMON ========== -->
+    <section class="about-soul">
+        <div class="container">
+            <div class="soul-inner">
+                <span class="about-section-tag about-section-tag-light">L'&acirc;me de Florimon</span>
+                <blockquote class="soul-quote">
+                    &laquo;&nbsp;Un beau jardin, fleuri, color&eacute; et facile &agrave; vivre,
+                    avec un budget limit&eacute;.&nbsp;&raquo;
+                </blockquote>
+                <p class="soul-text">
+                    C'est cette vision simple et sinc&egrave;re qui nous guide depuis 1968.
+                    Chez Florimon, nous croyons que chaque espace &mdash; du plus petit balcon
+                    au plus grand jardin &mdash; m&eacute;rite de prendre vie.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-inner">
+                <div class="newsletter-text">
+                    <h2>Recevez nos conseils v&eacute;g&eacute;taux</h2>
+                    <p>Inspirations, guides saisonniers et offres exclusives. Pas de spam, promis.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" class="input-field" placeholder="votre@email.fr" required>
+                    <button type="submit" class="btn btn-accent">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <img src="logo florimon-complet.png" alt="Florimon" class="footer-logo">
+                    <p class="footer-desc">
+                        Le v&eacute;g&eacute;tal adapt&eacute; aux espaces d'aujourd'hui.
+                        Balcon, terrasse, cour ou petit jardin &mdash; on simplifie tout.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Boutique</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Plantes structurantes</a></li>
+                        <li><a href="#">Haies compactes</a></li>
+                        <li><a href="#">Nos plantes</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Aide</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Suivez-nous</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Florimon &mdash; Tous droits r&eacute;serv&eacute;s &mdash; Mentions l&eacute;gales &mdash; CGV
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        var t = localStorage.getItem('florimon-theme');
+        if (t && t !== 'vert') document.body.classList.add('theme-' + t);
+    })();
+    </script>
+
+</body>
+</html>

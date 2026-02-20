@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charte Graphique — Florimon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="charte-graphique-florimon.css">
+</head>
+<body>
+
+    <!-- ========== EN-TETE ========== -->
+    <header class="page-header">
+        <img src="logo florimon-complet.png" alt="Logo Florimon" class="header-logo">
+        <h1>Florimon</h1>
+        <p>Charte graphique &mdash; Guide d'identit&eacute; visuelle pour la boutique de plantes en ligne</p>
+        <a href="boutique.html" class="header-site-link" target="_blank">Voir le site &rarr;</a>
+    </header>
+
+    <main>
+
+        <!-- ========== 1. IDENTITE & LOGO ========== -->
+        <section>
+            <h2 class="section-title">1. Identit&eacute; &amp; Logo</h2>
+            <p class="section-desc">
+                Le logo Florimon s'appuie sur la typographie DM Serif Display pour &eacute;voquer l'&eacute;l&eacute;gance naturelle.
+                Le &laquo;&nbsp;i&nbsp;&raquo; stylis&eacute; en italique rappelle une feuille, ancrant visuellement la marque dans l'univers v&eacute;g&eacute;tal.
+                Toujours respecter les zones de protection autour du logo.
+            </p>
+
+            <!-- Logo officiel -->
+            <div class="logo-official">
+                <div class="logo-card light" style="grid-column: 1 / -1;">
+                    <img src="logo florimon-complet.png" alt="Logo Florimon" class="logo-img-main">
+                    <div class="logo-label dark-text">Logo officiel</div>
+                </div>
+            </div>
+
+            <!-- Déclinaisons sur fonds -->
+            <div class="logo-showcase" style="margin-top: var(--space-lg);">
+                <div class="logo-card light">
+                    <img src="logo florimon-complet.png" alt="Logo Florimon" class="logo-img">
+                    <div class="logo-tagline dark-text">La nature chez vous</div>
+                    <div class="logo-label dark-text">Fond clair</div>
+                </div>
+                <div class="logo-card dark">
+                    <img src="logo florimon-complet.png" alt="Logo Florimon" class="logo-img">
+                    <div class="logo-tagline light-text">La nature chez vous</div>
+                    <div class="logo-label light-text">Fond sombre</div>
+                </div>
+                <div class="logo-card accent">
+                    <img src="logo florimon-complet.png" alt="Logo Florimon" class="logo-img">
+                    <div class="logo-tagline dark-text">La nature chez vous</div>
+                    <div class="logo-label dark-text">Fond accent</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 2. PALETTE DE COULEURS ========== -->
+        <section>
+            <h2 class="section-title">2. Palette de couleurs</h2>
+            <p class="section-desc">
+                Une palette inspir&eacute;e de la for&ecirc;t et de la terre, &eacute;quilibr&eacute;e par des tons chauds qui apportent
+                une dimension urbaine et accueillante. Le vert profond ancre la confiance, le sable r&eacute;chauffe l'exp&eacute;rience.
+            </p>
+
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--vert-profond);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Vert Profond</div>
+                        <div class="color-hex">#1B4332</div>
+                        <div class="color-usage">Couleur principale. Titres, CTA primaires, fond de header/footer.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--vert-foret);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Vert For&ecirc;t</div>
+                        <div class="color-hex">#2D6A4F</div>
+                        <div class="color-usage">Boutons primaires, liens, &eacute;l&eacute;ments interactifs.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--vert-sauge);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Vert Sauge</div>
+                        <div class="color-hex">#74A98B</div>
+                        <div class="color-usage">Accents secondaires, ic&ocirc;nes, bordures actives.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--vert-menthe);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Vert Menthe</div>
+                        <div class="color-hex">#B7E4C7</div>
+                        <div class="color-usage">Badges, fonds l&eacute;gers, &eacute;tats de succ&egrave;s.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--sable);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Sable</div>
+                        <div class="color-hex">#D4A373</div>
+                        <div class="color-usage">Accent chaud. Boutons secondaires, promotions.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--terracotta);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Terracotta</div>
+                        <div class="color-hex">#C07A50</div>
+                        <div class="color-usage">Alertes, prix barr&eacute;s, notifications urgentes.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--creme);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Cr&egrave;me</div>
+                        <div class="color-hex">#FBF8F1</div>
+                        <div class="color-usage">Fond principal du site. Doux et chaleureux.</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--charbon);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Charbon</div>
+                        <div class="color-hex">#1E1E1E</div>
+                        <div class="color-usage">Texte principal. Corps de texte, paragraphes.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 3. TYPOGRAPHIE ========== -->
+        <section>
+            <h2 class="section-title">3. Typographie</h2>
+            <p class="section-desc">
+                Le duo DM Serif Display / Inter cr&eacute;e un &eacute;quilibre entre caract&egrave;re et lisibilit&eacute;.
+                La serif apporte une personnalit&eacute; organique aux titres, la sans-serif assure une lecture fluide sur tous les &eacute;crans.
+            </p>
+
+            <div class="typo-section">
+                <div class="typo-block">
+                    <h3>Police de titres</h3>
+                    <div class="typo-specimen-serif">DM Serif Display</div>
+                    <div class="typo-meta">Google Fonts &mdash; Regular 400, Italic</div>
+                    <div class="typo-specimen-serif" style="font-size:1.6rem; color: var(--gris-chaud); margin-top: var(--space-md);">
+                        Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm<br>
+                        Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br>
+                        0 1 2 3 4 5 6 7 8 9
+                    </div>
+                </div>
+
+                <div class="typo-block">
+                    <h3>Police de corps</h3>
+                    <div class="typo-specimen-sans">Inter</div>
+                    <div class="typo-meta">Google Fonts &mdash; 300 &rarr; 700</div>
+                    <div class="typo-weights">
+                        <div class="typo-weight-row">
+                            <span class="typo-weight-label">Light 300</span>
+                            <span class="typo-weight-sample" style="font-weight:300;">La nature chez vous</span>
+                        </div>
+                        <div class="typo-weight-row">
+                            <span class="typo-weight-label">Regular 400</span>
+                            <span class="typo-weight-sample" style="font-weight:400;">La nature chez vous</span>
+                        </div>
+                        <div class="typo-weight-row">
+                            <span class="typo-weight-label">Medium 500</span>
+                            <span class="typo-weight-sample" style="font-weight:500;">La nature chez vous</span>
+                        </div>
+                        <div class="typo-weight-row">
+                            <span class="typo-weight-label">Semi-bold 600</span>
+                            <span class="typo-weight-sample" style="font-weight:600;">La nature chez vous</span>
+                        </div>
+                        <div class="typo-weight-row">
+                            <span class="typo-weight-label">Bold 700</span>
+                            <span class="typo-weight-sample" style="font-weight:700;">La nature chez vous</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Echelle typographique -->
+            <div class="type-scale mt-xl">
+                <h3 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.15em; color:var(--vert-sauge); font-weight:600; margin-bottom:var(--space-lg);">
+                    &Eacute;chelle typographique
+                </h3>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">Display</span>
+                    <span class="type-scale-size">3rem</span>
+                    <span style="font-family:var(--font-titre); font-size:3rem; color:var(--vert-profond); line-height:1.1;">Cultivez la ville</span>
+                </div>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">H1</span>
+                    <span class="type-scale-size">2.25rem</span>
+                    <span style="font-family:var(--font-titre); font-size:2.25rem; color:var(--vert-profond); line-height:1.2;">Nos plantes</span>
+                </div>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">H2</span>
+                    <span class="type-scale-size">1.75rem</span>
+                    <span style="font-family:var(--font-titre); font-size:1.75rem; color:var(--vert-profond); line-height:1.2;">Cat&eacute;gories</span>
+                </div>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">H3</span>
+                    <span class="type-scale-size">1.25rem</span>
+                    <span style="font-family:var(--font-titre); font-size:1.25rem; color:var(--vert-profond); line-height:1.3;">Monstera Deliciosa</span>
+                </div>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">Corps</span>
+                    <span class="type-scale-size">1rem</span>
+                    <span style="font-size:1rem; color:var(--charbon);">Transformez votre int&eacute;rieur en oasis v&eacute;g&eacute;tale.</span>
+                </div>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">Small</span>
+                    <span class="type-scale-size">0.85rem</span>
+                    <span style="font-size:0.85rem; color:var(--gris-chaud);">Livraison gratuite d&egrave;s 49&euro; d'achat.</span>
+                </div>
+                <div class="type-scale-row">
+                    <span class="type-scale-label">Caption</span>
+                    <span class="type-scale-size">0.75rem</span>
+                    <span style="font-size:0.75rem; color:var(--gris-chaud); text-transform:uppercase; letter-spacing:0.1em;">Plantes d'int&eacute;rieur</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 5. BOUTONS & COMPOSANTS ========== -->
+        <section>
+            <h2 class="section-title">5. Boutons &amp; Composants UI</h2>
+            <p class="section-desc">
+                Les boutons utilisent des coins arrondis (border-radius: 9999px) pour un aspect doux et moderne.
+                Trois variantes principales couvrent l'ensemble des interactions.
+            </p>
+
+            <div class="components-grid">
+                <div class="component-group">
+                    <h3>Boutons</h3>
+                    <div class="btn-row">
+                        <button class="btn btn-primary">Ajouter au panier</button>
+                        <button class="btn btn-secondary">D&eacute;couvrir</button>
+                        <button class="btn btn-accent">Offre sp&eacute;ciale</button>
+                        <button class="btn btn-ghost">En savoir plus &rarr;</button>
+                    </div>
+                    <div class="btn-row mt-lg">
+                        <button class="btn btn-primary btn-sm">Petit</button>
+                        <button class="btn btn-primary">Normal</button>
+                        <button class="btn btn-primary btn-lg">Grand</button>
+                    </div>
+                </div>
+
+                <div class="component-group">
+                    <h3>Champs de formulaire</h3>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label class="input-label">Adresse email</label>
+                            <input type="email" class="input-field" placeholder="vous@exemple.fr">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Rechercher une plante</label>
+                            <input type="text" class="input-field" placeholder="Monstera, Ficus, Pothos...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-group">
+                    <h3>Badges &amp; Tags</h3>
+                    <div class="btn-row">
+                        <span class="badge badge-green">Nouveau</span>
+                        <span class="badge badge-sand">Promo -20%</span>
+                        <span class="badge badge-neutral">Rupture</span>
+                        <span class="badge badge-green">Facile d'entretien</span>
+                        <span class="badge badge-sand">Best-seller</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 6. CARTES PRODUITS ========== -->
+        <section>
+            <h2 class="section-title">6. Carte Produit</h2>
+            <p class="section-desc">
+                La carte produit est l'&eacute;l&eacute;ment central de l'exp&eacute;rience d'achat. Sobre et a&eacute;r&eacute;e,
+                elle met en valeur le visuel de la plante avec un effet de survol subtil.
+            </p>
+
+            <div class="cards-row">
+                <div class="product-card">
+                    <div class="product-img" style="background: #e8f5e9;">
+                        <span class="product-badge badge badge-green">Nouveau</span>
+                        &#127811;
+                    </div>
+                    <div class="product-body">
+                        <div class="product-category">Plante d'int&eacute;rieur</div>
+                        <div class="product-name">Monstera Deliciosa</div>
+                        <div class="product-desc">Plante tropicale majestueuse, parfaite pour les grands espaces lumineux.</div>
+                        <div class="product-footer">
+                            <span class="product-price">34<span class="currency">,90&euro;</span></span>
+                            <button class="btn-cart" title="Ajouter au panier">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img" style="background: #fdf6ec;">
+                        <span class="product-badge badge badge-sand">Best-seller</span>
+                        &#127813;
+                    </div>
+                    <div class="product-body">
+                        <div class="product-category">Succulente</div>
+                        <div class="product-name">Figuier de Barbarie</div>
+                        <div class="product-desc">Robuste et graphique, id&eacute;al pour un int&eacute;rieur minimaliste.</div>
+                        <div class="product-footer">
+                            <span class="product-price">22<span class="currency">,50&euro;</span></span>
+                            <button class="btn-cart" title="Ajouter au panier">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img" style="background: #e8f0e8;">
+                        &#127807;
+                    </div>
+                    <div class="product-body">
+                        <div class="product-category">Plante suspendue</div>
+                        <div class="product-name">Pothos Dor&eacute;</div>
+                        <div class="product-desc">Lianes retombantes faciles d'entretien, s'adapte &agrave; toutes les lumi&egrave;res.</div>
+                        <div class="product-footer">
+                            <span class="product-price">18<span class="currency">,00&euro;</span></span>
+                            <button class="btn-cart" title="Ajouter au panier">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 8. ESPACEMENTS ========== -->
+        <section>
+            <h2 class="section-title">8. Espacements</h2>
+            <p class="section-desc">
+                Un syst&egrave;me d'espacement bas&eacute; sur des multiples de 4px/8px garantit un rythme visuel harmonieux
+                et une coh&eacute;rence entre tous les composants.
+            </p>
+
+            <div class="spacing-demo" style="background: var(--blanc); padding: var(--space-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                <div class="spacing-row">
+                    <span class="spacing-label">--space-xs</span>
+                    <span class="spacing-value">4px</span>
+                    <div class="spacing-bar" style="width: 16px;"></div>
+                </div>
+                <div class="spacing-row">
+                    <span class="spacing-label">--space-sm</span>
+                    <span class="spacing-value">8px</span>
+                    <div class="spacing-bar" style="width: 32px;"></div>
+                </div>
+                <div class="spacing-row">
+                    <span class="spacing-label">--space-md</span>
+                    <span class="spacing-value">16px</span>
+                    <div class="spacing-bar" style="width: 64px;"></div>
+                </div>
+                <div class="spacing-row">
+                    <span class="spacing-label">--space-lg</span>
+                    <span class="spacing-value">24px</span>
+                    <div class="spacing-bar" style="width: 96px;"></div>
+                </div>
+                <div class="spacing-row">
+                    <span class="spacing-label">--space-xl</span>
+                    <span class="spacing-value">40px</span>
+                    <div class="spacing-bar" style="width: 160px;"></div>
+                </div>
+                <div class="spacing-row">
+                    <span class="spacing-label">--space-2xl</span>
+                    <span class="spacing-value">64px</span>
+                    <div class="spacing-bar" style="width: 256px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 9. REGLES D'USAGE ========== -->
+        <section>
+            <h2 class="section-title">9. R&egrave;gles d'usage</h2>
+            <p class="section-desc">
+                Pour maintenir la coh&eacute;rence de la marque Florimon sur tous les supports,
+                voici les bonnes pratiques &agrave; suivre et les erreurs &agrave; &eacute;viter.
+            </p>
+
+            <div class="rules-grid">
+                <div class="rule-card do">
+                    <div class="rule-header">&#10003; &Agrave; faire</div>
+                    <ul class="rule-list">
+                        <li>Utiliser les couleurs de la palette d&eacute;finie</li>
+                        <li>Respecter les zones de protection du logo</li>
+                        <li>Privil&eacute;gier des visuels lumineux et naturels</li>
+                        <li>Garder des espaces a&eacute;r&eacute;s entre les &eacute;l&eacute;ments</li>
+                        <li>Utiliser le ton bienveillant et expert</li>
+                        <li>Maintenir un contraste suffisant (WCAG AA)</li>
+                    </ul>
+                </div>
+                <div class="rule-card dont">
+                    <div class="rule-header">&#10007; &Agrave; &eacute;viter</div>
+                    <ul class="rule-list">
+                        <li>D&eacute;former ou pivoter le logo</li>
+                        <li>Utiliser des couleurs hors palette</li>
+                        <li>Surcharger les pages d'&eacute;l&eacute;ments visuels</li>
+                        <li>M&eacute;langer plus de 2 polices diff&eacute;rentes</li>
+                        <li>Utiliser des photos sombres ou froides</li>
+                        <li>Placer le logo sur un fond trop charg&eacute;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 10. FOOTER EXEMPLE ========== -->
+        <section>
+            <h2 class="section-title">10. Footer</h2>
+            <p class="section-desc">
+                Le footer reprend le fond Vert Profond pour fermer visuellement les pages.
+                Il regroupe les liens utiles, les r&eacute;seaux sociaux et les mentions l&eacute;gales.
+            </p>
+
+            <footer class="footer-demo">
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-brand">Flor<span class="leaf">i</span>mon</div>
+                        <p class="footer-desc">
+                            Votre jardinerie urbaine en ligne. Plantes s&eacute;lectionn&eacute;es avec soin,
+                            livr&eacute;es chez vous dans les meilleures conditions.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="footer-title">Boutique</div>
+                        <ul class="footer-links">
+                            <li><a href="#">Plantes d'int&eacute;rieur</a></li>
+                            <li><a href="#">Plantes d'ext&eacute;rieur</a></li>
+                            <li><a href="#">Pots &amp; accessoires</a></li>
+                            <li><a href="#">Kits d&eacute;butant</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer-title">Aide</div>
+                        <ul class="footer-links">
+                            <li><a href="#">Livraison</a></li>
+                            <li><a href="#">Retours</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer-title">Suivez-nous</div>
+                        <ul class="footer-links">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                            <li><a href="#">TikTok</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 Florimon &mdash; Tous droits r&eacute;serv&eacute;s &mdash; Mentions l&eacute;gales &mdash; CGV
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+</body>
+</html>

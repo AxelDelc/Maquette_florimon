@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florimon &mdash; Nos plantes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="listing.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="navbar-top">
+            <a href="boutique.html" class="nav-logo">
+                <img src="logo florimon.png" alt="Florimon" class="nav-logo-img">
+            </a>
+            <form class="nav-search" onsubmit="return false;">
+                <input type="search" class="nav-search-input" placeholder="Rechercher une plante, un produit...">
+                <button type="submit" class="nav-search-btn">&#128269;</button>
+            </form>
+            <div class="nav-actions">
+                <button class="nav-icon" title="Mon compte">&#128100;</button>
+                <button class="nav-icon nav-cart" title="Panier">
+                    &#128722;
+                    <span class="cart-badge">2</span>
+                </button>
+            </div>
+            <button class="nav-mobile-toggle" aria-label="Menu">&#9776;</button>
+        </div>
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-trigger">Plantes <span class="nav-chevron">&#9662;</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-col">
+                                <a href="listing.html?cat=arbustes" class="mega-link">Arbustes</a>
+                                <a href="listing.html?cat=vivaces" class="mega-link">Plantes vivaces</a>
+                                <a href="listing.html?cat=annuelles" class="mega-link">Plantes annuelles</a>
+                                <a href="listing.html?cat=fruitiers" class="mega-link">Fruitiers Arbres et arbustes</a>
+                                <a href="listing.html?cat=rosiers" class="mega-link">Rosiers</a>
+                                <a href="listing.html?cat=bulbes" class="mega-link">Bulbes &agrave; fleurs</a>
+                            </div>
+                            <div class="mega-col">
+                                <a href="listing.html?cat=grimpantes" class="mega-link">Plantes grimpantes</a>
+                                <a href="listing.html?cat=arbres" class="mega-link">Arbres</a>
+                                <a href="listing.html?cat=aquatiques" class="mega-link">Plantes aquatiques</a>
+                                <a href="listing.html?cat=interieur" class="mega-link">Plantes d'int&eacute;rieur</a>
+                                <a href="listing.html?cat=equipement" class="mega-link">&Eacute;quipement</a>
+                                <a href="listing.html?cat=nouveautes" class="mega-link mega-link-new">Nouveaut&eacute;s</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-trigger">Potager <span class="nav-chevron">&#9662;</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-col">
+                                <a href="listing.html?cat=graines-legumes" class="mega-link">Graines de fruits et l&eacute;gumes</a>
+                                <a href="listing.html?cat=pommes-de-terre" class="mega-link">Plants de Pommes de Terre</a>
+                                <a href="listing.html?cat=ail-oignons" class="mega-link">Ail, Oignons et &Eacute;chalotes</a>
+                                <a href="listing.html?cat=graines-fleurs" class="mega-link">Graines de fleurs</a>
+                                <a href="listing.html?cat=aromatiques" class="mega-link">Plants d'aromatiques</a>
+                                <a href="listing.html?cat=plants-potagers" class="mega-link">Plants potagers</a>
+                            </div>
+                            <div class="mega-col">
+                                <a href="listing.html?cat=graines-bio" class="mega-link">Graines de fruits et l&eacute;gumes Bio</a>
+                                <a href="listing.html?cat=gazon" class="mega-link">Graines de gazon</a>
+                                <a href="listing.html?cat=kit-graines" class="mega-link">Kit de graines</a>
+                                <a href="listing.html?cat=champignons" class="mega-link">Kits champignons</a>
+                                <a href="listing.html?cat=nouveautes-potager" class="mega-link mega-link-new">Nouveaut&eacute;s du potager</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="a-propos.html">&Agrave; propos</a></li>
+                <li><a href="index.html#temoignages">T&eacute;moignages</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== BREADCRUMB ========== -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="boutique.html">Accueil</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Plantes</span>
+        </div>
+    </div>
+
+    <!-- ========== CATEGORY HEADER ========== -->
+    <section class="listing-header">
+        <div class="container">
+            <h1 class="listing-title">Nos plantes</h1>
+            <p class="listing-subtitle">
+                D&eacute;couvrez notre s&eacute;lection de plantes adapt&eacute;es aux petits espaces : balcons, terrasses et jardins compacts.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== FILTRES + GRILLE ========== -->
+    <section class="listing-content">
+        <div class="container">
+
+            <!-- Barre de filtres -->
+            <div class="filters-bar">
+                <div class="filters-left">
+                    <span class="filters-count">24 produits</span>
+                    <div class="filter-chips">
+                        <button class="filter-chip active">Tout</button>
+                        <button class="filter-chip">Arbustes</button>
+                        <button class="filter-chip">Vivaces</button>
+                        <button class="filter-chip">Rosiers</button>
+                        <button class="filter-chip">Grimpantes</button>
+                        <button class="filter-chip">Bulbes</button>
+                    </div>
+                </div>
+                <div class="filters-right">
+                    <select class="filter-select">
+                        <option>Trier par : Populaires</option>
+                        <option>Prix croissant</option>
+                        <option>Prix d&eacute;croissant</option>
+                        <option>Nouveaut&eacute;s</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grille produits -->
+            <div class="products-grid">
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/abelia.jpg" alt="Ab&eacute;lia Grandiflora">
+                        <span class="product-badge">Nouveau</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arbustes</span>
+                        <h3 class="product-name">Ab&eacute;lia Grandiflora Compacta</h3>
+                        <p class="product-desc">Arbuste compact et persistant, floraison estivale rose p&acirc;le. Id&eacute;al haie basse.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">12,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/rosier-ronsard.jpg" alt="Rosier Pierre de Ronsard">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Rosiers</span>
+                        <h3 class="product-name">Rosier Pierre de Ronsard</h3>
+                        <p class="product-desc">Rosier grimpant remontant, grandes fleurs doubles roses et cr&egrave;me. Tr&egrave;s parfum&eacute;.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">18,50&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/photinia.jpg" alt="Photinia Red Robin">
+                        <span class="product-badge product-badge-promo">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arbustes</span>
+                        <h3 class="product-name">Photinia Red Robin</h3>
+                        <p class="product-desc">Arbuste persistant au feuillage rouge vif au printemps. Parfait pour haies color&eacute;es.</p>
+                        <div class="product-bottom">
+                            <div class="product-prices">
+                                <span class="product-price-old">14,90&euro;</span>
+                                <span class="product-price">11,90&euro;</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/lavande.jpg" alt="Lavande Hidcote Blue">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vivaces</span>
+                        <h3 class="product-name">Lavande Hidcote Blue</h3>
+                        <p class="product-desc">Lavande compacte bleu fonc&eacute;, tr&egrave;s parfum&eacute;e. Id&eacute;ale en bordure ou pot.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">6,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/olivier.jpg" alt="Olivier d'ornement">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arbres</span>
+                        <h3 class="product-name">Olivier d'ornement tige</h3>
+                        <p class="product-desc">Olivier en tige 120cm, r&eacute;sistant et d&eacute;coratif. L'accent m&eacute;diterran&eacute;en de votre terrasse.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">49,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/jasmin.jpg" alt="Jasmin &eacute;toil&eacute;">
+                        <span class="product-badge">Nouveau</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Grimpantes</span>
+                        <h3 class="product-name">Jasmin &eacute;toil&eacute;</h3>
+                        <p class="product-desc">Grimpante persistante au parfum envo&ucirc;tant. Fleurs blanches &eacute;toil&eacute;es de juin &agrave; septembre.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">15,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/tulipes.jpg" alt="Tulipes m&eacute;lange pastel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bulbes</span>
+                        <h3 class="product-name">Tulipes m&eacute;lange pastel (x20)</h3>
+                        <p class="product-desc">Assortiment de 20 bulbes aux teintes pastel. Floraison printani&egrave;re spectaculaire.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">9,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/bambou.jpg" alt="Bambou Fargesia Rufa">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arbustes</span>
+                        <h3 class="product-name">Bambou Fargesia Rufa</h3>
+                        <p class="product-desc">Bambou non tra&ccedil;ant compact. Brise-vue naturel id&eacute;al pour balcons et terrasses.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">24,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/hortensia.jpg" alt="Hortensia Annabelle">
+                        <span class="product-badge product-badge-promo">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vivaces</span>
+                        <h3 class="product-name">Hortensia Annabelle</h3>
+                        <p class="product-desc">Grosses boules blanches spectaculaires de juin &agrave; septembre. Mi-ombre &agrave; ombre.</p>
+                        <div class="product-bottom">
+                            <div class="product-prices">
+                                <span class="product-price-old">19,90&euro;</span>
+                                <span class="product-price">16,90&euro;</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/rosier-bonica.jpg" alt="Rosier Bonica">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Rosiers</span>
+                        <h3 class="product-name">Rosier Bonica</h3>
+                        <p class="product-desc">Rosier paysager tr&egrave;s florif&egrave;re, petites roses doubles. Rustique et facile d'entretien.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">14,50&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/graminee.jpg" alt="Gramin&eacute;e Stipa">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vivaces</span>
+                        <h3 class="product-name">Gramin&eacute;e Stipa Tenuifolia</h3>
+                        <p class="product-desc">Gramin&eacute;e l&eacute;g&egrave;re aux &eacute;pis dor&eacute;s ondulant au vent. Effet naturel garanti.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">7,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="produit.html" class="product-card">
+                    <div class="product-img">
+                        <img src="img/produits/clematite.jpg" alt="Cl&eacute;matite Montana">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Grimpantes</span>
+                        <h3 class="product-name">Cl&eacute;matite Montana Rubens</h3>
+                        <p class="product-desc">Grimpante vigoureuse, nuage de petites fleurs roses au printemps. Croissance rapide.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">13,90&euro;</span>
+                            <button class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn pagination-next">Suivant &rarr;</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-inner">
+                <div class="newsletter-text">
+                    <h2>Recevez nos conseils v&eacute;g&eacute;taux</h2>
+                    <p>Inspirations, guides saisonniers et offres exclusives. Pas de spam, promis.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" class="input-field" placeholder="votre@email.fr" required>
+                    <button type="submit" class="btn btn-accent">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <img src="logo florimon-complet.png" alt="Florimon" class="footer-logo">
+                    <p class="footer-desc">
+                        Le v&eacute;g&eacute;tal adapt&eacute; aux espaces d'aujourd'hui.
+                        Balcon, terrasse, cour ou petit jardin &mdash; on simplifie tout.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Boutique</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Plantes structurantes</a></li>
+                        <li><a href="#">Haies compactes</a></li>
+                        <li><a href="#">Nos plantes</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Aide</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Suivez-nous</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Florimon &mdash; Tous droits r&eacute;serv&eacute;s &mdash; Mentions l&eacute;gales &mdash; CGV
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        var t = localStorage.getItem('florimon-theme');
+        if (t && t !== 'vert') document.body.classList.add('theme-' + t);
+    })();
+    </script>
+
+</body>
+</html>

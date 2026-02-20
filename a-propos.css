@@ -1,0 +1,374 @@
+/* ============================================
+   FLORIMON — PAGE À PROPOS
+   ============================================ */
+
+/* =============================================
+   HERO À PROPOS
+   ============================================= */
+.about-hero {
+    background: var(--vert-profond);
+    padding: var(--space-3xl) 0 var(--space-2xl);
+    text-align: center;
+}
+
+.about-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    color: var(--vert-menthe);
+    margin-bottom: var(--space-md);
+}
+
+.about-hero-title {
+    font-family: var(--font-titre);
+    font-size: 3.2rem;
+    line-height: 1.1;
+    color: var(--blanc);
+    margin-bottom: var(--space-lg);
+}
+
+.about-hero-title em {
+    font-style: italic;
+    color: var(--vert-menthe);
+}
+
+.about-hero-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* =============================================
+   SECTIONS À PROPOS
+   ============================================= */
+.about-section {
+    padding: var(--space-3xl) 0;
+}
+
+.about-section-alt {
+    background: var(--blanc);
+}
+
+.about-section-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.about-section-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    color: var(--vert-sauge);
+    margin-bottom: var(--space-md);
+}
+
+.about-section-tag-light {
+    color: var(--vert-menthe);
+}
+
+.about-section-header h2,
+.about-content h2 {
+    font-family: var(--font-titre);
+    font-size: 2.25rem;
+    color: var(--vert-profond);
+    margin-bottom: var(--space-lg);
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: var(--gris-chaud);
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+}
+
+.about-content p strong {
+    color: var(--vert-profond);
+}
+
+/* =============================================
+   GRILLE À PROPOS (texte + visuel)
+   ============================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.about-grid-reverse .about-visual {
+    order: -1;
+}
+
+/* =============================================
+   CARTES CHIFFRES CLÉS
+   ============================================= */
+.about-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+.about-card-highlight {
+    background: var(--blanc);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(27, 67, 50, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.about-card-highlight:last-child {
+    grid-column: span 2;
+}
+
+.about-card-number {
+    font-family: var(--font-titre);
+    font-size: 2.5rem;
+    color: var(--vert-profond);
+    line-height: 1;
+}
+
+.about-card-label {
+    font-size: 0.85rem;
+    color: var(--gris-chaud);
+    font-weight: 500;
+}
+
+/* =============================================
+   ENGAGEMENTS
+   ============================================= */
+.engagements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.engagement-card {
+    background: var(--creme);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.engagement-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.engagement-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: var(--space-md);
+}
+
+.engagement-card h3 {
+    font-family: var(--font-titre);
+    font-size: 1.2rem;
+    color: var(--vert-profond);
+    margin-bottom: var(--space-sm);
+}
+
+.engagement-card p {
+    font-size: 0.9rem;
+    color: var(--gris-chaud);
+    line-height: 1.7;
+}
+
+.engagement-card p strong {
+    color: var(--vert-profond);
+}
+
+/* =============================================
+   CONTACT
+   ============================================= */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.contact-icon {
+    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    background: var(--vert-menthe);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--vert-profond);
+    margin-bottom: 2px;
+}
+
+.contact-item span {
+    font-size: 0.88rem;
+    color: var(--gris-chaud);
+    line-height: 1.5;
+}
+
+.contact-item a {
+    color: var(--vert-foret);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: var(--vert-profond);
+    text-decoration: underline;
+}
+
+/* --- Carte localisation --- */
+.about-visual-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-placeholder {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--vert-menthe) 0%, rgba(183, 228, 199, 0.4) 100%);
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+.map-pin {
+    font-size: 3rem;
+}
+
+.map-label {
+    font-family: var(--font-titre);
+    font-size: 1.3rem;
+    color: var(--vert-profond);
+}
+
+.map-sublabel {
+    font-size: 0.85rem;
+    color: var(--vert-foret);
+}
+
+/* =============================================
+   L'ÂME DE FLORIMON
+   ============================================= */
+.about-soul {
+    background: var(--vert-profond);
+    padding: var(--space-3xl) 0;
+}
+
+.soul-inner {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.soul-quote {
+    font-family: var(--font-titre);
+    font-size: 2rem;
+    color: var(--blanc);
+    line-height: 1.3;
+    margin-bottom: var(--space-lg);
+    font-style: italic;
+}
+
+.soul-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 1024px) {
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .about-grid-reverse .about-visual {
+        order: 0;
+    }
+
+    .about-visual {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .engagements-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-title {
+        font-size: 2rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .about-section-header h2,
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .soul-quote {
+        font-size: 1.5rem;
+    }
+
+    .about-visual {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card-highlight:last-child {
+        grid-column: span 1;
+    }
+
+    .map-placeholder {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .soul-quote {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,924 @@
+/* ============================================
+   CHARTE GRAPHIQUE — FLORIMON
+   Vente de plantes en ligne pour urbains
+   ============================================ */
+
+:root {
+    /* --- Palette principale --- */
+    --vert-profond:    #1B4332;
+    --vert-foret:      #2D6A4F;
+    --vert-sauge:      #74A98B;
+    --vert-menthe:     #B7E4C7;
+    --creme:           #FBF8F1;
+    --sable:           #D4A373;
+    --terracotta:      #C07A50;
+    --charbon:         #1E1E1E;
+    --gris-chaud:      #6B6B6B;
+    --blanc:           #FFFFFF;
+
+    /* --- Typographies --- */
+    --font-titre:  'DM Serif Display', Georgia, serif;
+    --font-corps:  'Inter', -apple-system, sans-serif;
+
+    /* --- Espacements --- */
+    --space-xs:  0.25rem;
+    --space-sm:  0.5rem;
+    --space-md:  1rem;
+    --space-lg:  1.5rem;
+    --space-xl:  2.5rem;
+    --space-2xl: 4rem;
+
+    /* --- Rayons de bordure --- */
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:   16px;
+    --radius-full: 9999px;
+
+    /* --- Ombres --- */
+    --shadow-sm:  0 1px 3px rgba(27, 67, 50, 0.08);
+    --shadow-md:  0 4px 12px rgba(27, 67, 50, 0.10);
+    --shadow-lg:  0 12px 32px rgba(27, 67, 50, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-corps);
+    background-color: var(--creme);
+    color: var(--charbon);
+    line-height: 1.6;
+}
+
+/* ---- Layout ---- */
+.page-header {
+    background: var(--vert-profond);
+    color: var(--blanc);
+    padding: var(--space-2xl) var(--space-xl);
+    text-align: center;
+}
+
+.page-header h1 {
+    font-family: var(--font-titre);
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.85;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: var(--space-md);
+    border-radius: var(--radius-md);
+}
+
+.header-site-link {
+    display: inline-block;
+    margin-top: var(--space-lg);
+    padding: 0.65rem 1.5rem;
+    background: var(--sable);
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+    letter-spacing: 0.02em;
+}
+
+.header-site-link:hover {
+    background: var(--terracotta);
+    box-shadow: 0 4px 12px rgba(192, 122, 80, 0.3);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-lg);
+}
+
+section {
+    margin-bottom: var(--space-2xl);
+}
+
+.section-title {
+    font-family: var(--font-titre);
+    font-size: 1.8rem;
+    color: var(--vert-profond);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--vert-menthe);
+    display: inline-block;
+}
+
+.section-desc {
+    color: var(--gris-chaud);
+    margin-bottom: var(--space-xl);
+    max-width: 700px;
+    font-size: 0.95rem;
+}
+
+/* =============================================
+   1. IDENTITE & LOGO
+   ============================================= */
+.logo-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.logo-card {
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl) var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 200px;
+}
+
+.logo-card.light {
+    background: var(--blanc);
+    border: 1px solid #e8e4dc;
+}
+
+.logo-card.dark {
+    background: var(--vert-profond);
+}
+
+.logo-card.accent {
+    background: var(--vert-menthe);
+}
+
+.logo-official {
+    display: grid;
+    margin-bottom: var(--space-sm);
+}
+
+.logo-img-main {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+}
+
+.logo-img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+}
+
+.logo-tagline {
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-top: var(--space-sm);
+    font-weight: 500;
+}
+
+.logo-tagline.dark-text { color: var(--gris-chaud); }
+.logo-tagline.light-text { color: rgba(255,255,255,0.6); }
+
+.logo-label {
+    font-size: 0.75rem;
+    margin-top: var(--space-lg);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.logo-label.dark-text { color: var(--gris-chaud); }
+.logo-label.light-text { color: rgba(255,255,255,0.5); }
+
+/* =============================================
+   2. PALETTE DE COULEURS
+   ============================================= */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-lg);
+}
+
+.color-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    background: var(--blanc);
+}
+
+.color-swatch {
+    height: 120px;
+    position: relative;
+}
+
+.color-info {
+    padding: var(--space-md);
+}
+
+.color-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+}
+
+.color-hex {
+    font-size: 0.8rem;
+    color: var(--gris-chaud);
+    font-family: 'Courier New', monospace;
+}
+
+.color-usage {
+    font-size: 0.75rem;
+    color: var(--gris-chaud);
+    margin-top: var(--space-xs);
+    line-height: 1.4;
+}
+
+/* =============================================
+   3. TYPOGRAPHIE
+   ============================================= */
+.typo-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+}
+
+@media (max-width: 700px) {
+    .typo-section { grid-template-columns: 1fr; }
+}
+
+.typo-block {
+    background: var(--blanc);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.typo-block h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--vert-sauge);
+    margin-bottom: var(--space-lg);
+    font-family: var(--font-corps);
+    font-weight: 600;
+}
+
+.typo-specimen-serif {
+    font-family: var(--font-titre);
+    font-size: 2.2rem;
+    color: var(--vert-profond);
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+}
+
+.typo-specimen-sans {
+    font-family: var(--font-corps);
+    font-size: 1.4rem;
+    color: var(--charbon);
+    margin-bottom: var(--space-sm);
+}
+
+.typo-meta {
+    font-size: 0.8rem;
+    color: var(--gris-chaud);
+    margin-bottom: var(--space-lg);
+}
+
+.typo-weights {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.typo-weight-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid #f0ece4;
+}
+
+.typo-weight-row:last-child {
+    border-bottom: none;
+}
+
+.typo-weight-label {
+    font-size: 0.75rem;
+    color: var(--gris-chaud);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    min-width: 80px;
+}
+
+.typo-weight-sample {
+    font-size: 1.1rem;
+}
+
+/* Echelle typographique */
+.type-scale {
+    background: var(--blanc);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    margin-top: var(--space-lg);
+}
+
+.type-scale-row {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid #f0ece4;
+}
+
+.type-scale-row:last-child {
+    border-bottom: none;
+}
+
+.type-scale-label {
+    font-size: 0.7rem;
+    color: var(--gris-chaud);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.type-scale-size {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: var(--vert-sauge);
+    min-width: 60px;
+    flex-shrink: 0;
+}
+
+/* =============================================
+   4. BOUTONS & COMPOSANTS
+   ============================================= */
+.components-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.component-group {
+    background: var(--blanc);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.component-group h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--vert-sauge);
+    margin-bottom: var(--space-lg);
+    font-weight: 600;
+}
+
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-corps);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.btn-primary {
+    background: var(--vert-foret);
+    color: var(--blanc);
+}
+
+.btn-primary:hover {
+    background: var(--vert-profond);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--vert-foret);
+    border-color: var(--vert-foret);
+}
+
+.btn-secondary:hover {
+    background: var(--vert-foret);
+    color: var(--blanc);
+}
+
+.btn-accent {
+    background: var(--sable);
+    color: var(--blanc);
+}
+
+.btn-accent:hover {
+    background: var(--terracotta);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--vert-foret);
+    padding: 0.75rem 1rem;
+}
+
+.btn-ghost:hover {
+    background: rgba(45, 106, 79, 0.06);
+}
+
+.btn-sm {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.8rem;
+}
+
+.btn-lg {
+    padding: 1rem 2.25rem;
+    font-size: 1rem;
+}
+
+.btn-icon {
+    gap: var(--space-sm);
+}
+
+/* Input fields */
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    align-items: flex-start;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 240px;
+}
+
+.input-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--vert-profond);
+    letter-spacing: 0.02em;
+}
+
+.input-field {
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #d6d0c4;
+    border-radius: var(--radius-md);
+    font-family: var(--font-corps);
+    font-size: 0.9rem;
+    background: var(--blanc);
+    color: var(--charbon);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: var(--vert-sauge);
+    box-shadow: 0 0 0 3px rgba(116, 169, 139, 0.15);
+}
+
+.input-field::placeholder {
+    color: #b5b0a6;
+}
+
+/* Tags / Badges */
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.85rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.badge-green {
+    background: var(--vert-menthe);
+    color: var(--vert-profond);
+}
+
+.badge-sand {
+    background: #f0e0cc;
+    color: var(--terracotta);
+}
+
+.badge-neutral {
+    background: #eae6de;
+    color: var(--gris-chaud);
+}
+
+/* =============================================
+   5. CARTE PRODUIT
+   ============================================= */
+.cards-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+}
+
+.product-card {
+    background: var(--blanc);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.product-img {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    position: relative;
+}
+
+.product-img .product-badge {
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+}
+
+.product-body {
+    padding: var(--space-lg);
+}
+
+.product-category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--vert-sauge);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.product-name {
+    font-family: var(--font-titre);
+    font-size: 1.2rem;
+    color: var(--vert-profond);
+    margin-bottom: var(--space-sm);
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: var(--gris-chaud);
+    margin-bottom: var(--space-md);
+    line-height: 1.5;
+}
+
+.product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--vert-profond);
+}
+
+.product-price .currency {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.btn-cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--vert-foret);
+    color: var(--blanc);
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.btn-cart:hover {
+    background: var(--vert-profond);
+}
+
+/* =============================================
+   6. NAVIGATION EXEMPLE
+   ============================================= */
+.navbar-demo {
+    background: var(--blanc);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 0 var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    margin-bottom: var(--space-lg);
+}
+
+.navbar-logo {
+    font-family: var(--font-titre);
+    font-size: 1.4rem;
+    color: var(--vert-profond);
+    text-decoration: none;
+}
+
+.navbar-logo .leaf {
+    color: var(--vert-sauge);
+    font-style: italic;
+}
+
+.navbar-links {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+}
+
+.navbar-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gris-chaud);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: var(--vert-profond);
+}
+
+.navbar-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--vert-sauge);
+    border-radius: 1px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.navbar-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gris-chaud);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar-icon:hover {
+    background: rgba(45, 106, 79, 0.06);
+    color: var(--vert-profond);
+}
+
+/* =============================================
+   7. ICONOGRAPHIE & ILLUSTRATIONS
+   ============================================= */
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--space-md);
+}
+
+.icon-card {
+    background: var(--blanc);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.icon-card .icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    display: block;
+}
+
+.icon-card .icon-label {
+    font-size: 0.7rem;
+    color: var(--gris-chaud);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* =============================================
+   8. ESPACEMENTS & GRILLE
+   ============================================= */
+.spacing-demo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.spacing-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.spacing-bar {
+    height: 24px;
+    background: var(--vert-menthe);
+    border-radius: var(--radius-sm);
+    transition: background 0.2s ease;
+}
+
+.spacing-bar:hover {
+    background: var(--vert-sauge);
+}
+
+.spacing-label {
+    font-size: 0.75rem;
+    font-family: 'Courier New', monospace;
+    color: var(--gris-chaud);
+    min-width: 120px;
+}
+
+.spacing-value {
+    font-size: 0.75rem;
+    font-family: 'Courier New', monospace;
+    color: var(--vert-sauge);
+    min-width: 60px;
+}
+
+/* =============================================
+   9. REGLES D'USAGE
+   ============================================= */
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.rule-card {
+    background: var(--blanc);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.rule-card.do {
+    border-top: 3px solid var(--vert-sauge);
+}
+
+.rule-card.dont {
+    border-top: 3px solid var(--terracotta);
+}
+
+.rule-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.rule-card.do .rule-header { color: var(--vert-foret); }
+.rule-card.dont .rule-header { color: var(--terracotta); }
+
+.rule-list {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--gris-chaud);
+    line-height: 1.8;
+}
+
+.rule-list li::before {
+    margin-right: var(--space-sm);
+}
+
+.rule-card.do .rule-list li::before { content: '✓'; color: var(--vert-sauge); font-weight: 700; }
+.rule-card.dont .rule-list li::before { content: '✗'; color: var(--terracotta); font-weight: 700; }
+
+/* =============================================
+   10. FOOTER EXEMPLE
+   ============================================= */
+.footer-demo {
+    background: var(--vert-profond);
+    color: var(--blanc);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    margin-top: var(--space-xl);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-xl);
+}
+
+@media (max-width: 700px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.footer-brand {
+    font-family: var(--font-titre);
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.footer-brand .leaf { color: var(--vert-sauge); font-style: italic; }
+
+.footer-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+.footer-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: rgba(255,255,255,0.5);
+}
+
+.footer-links {
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-sm);
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--vert-menthe);
+}
+
+.footer-bottom {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+}
+
+/* ---- Utilitaires ---- */
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mb-md { margin-bottom: var(--space-md); }
